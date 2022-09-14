@@ -1,15 +1,9 @@
+let num = 11;
+let result = true;
 
-
-let num=9
-let flag=true
-
-for(let i=2; i<num; i++){
-    if(num%i==1){
-        flag=false
+for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+        result = false;
     }
 }
-if(flag){
-    console.log(num,"Prime")
-}else{
-    console.log(num,"Not Prime")
-}
+console.log(result);
